@@ -1,42 +1,67 @@
-/* Chỉ sửa các dòng này, giữ nguyên tất cả mã còn lại */
-body {
-    background: #ffffff; /* Từ màu đen thành TRẮNG */
-    color: #000000; /* Chữ chuyển thành đen để rõ trên nền trắng */
-}
+* {margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
+body {background:#f8f9fa; color:#000; line-height:1.5;}
 
-/* Thanh menu trên cùng */
-.header-top {
-    background: #ffffff;
-    border-bottom: 1px solid #eeeeee;
-}
+/* THANH TRÊN CÙNG */
+.top-nav {display:flex; justify-content:space-between; align-items:center; padding:10px 15px; background:#fff; border-bottom:1px solid #eee;}
+.nav-left {display:flex; align-items:center; gap:15px;}
+.nav-logo {width:32px; height:32px; object-fit:contain; border-radius:4px;}
+.nav-link {font-size:14px; color:#333; text-decoration:none; font-weight:500; padding:5px 0;}
+.nav-link.active {color:#ff0055; font-weight:bold; border-bottom:2px solid #ff0055;}
+.nav-right {display:flex; gap:12px; align-items:center;}
+.nav-icon-link {display:flex; align-items:center; justify-content:center; padding:4px 6px; border-radius:50%; text-decoration:none;}
+.nav-icon-img {width:20px; height:20px; object-fit:contain; display:block;}
 
-/* Khối nạp thẻ */
-.recharge-box {
-    background: #ffffff;
-    border: 1px solid #ff3333;
-}
+/* THANH CHÀO MỪNG */
+.welcome-bar {background:#ffcc00; color:#000; text-align:center; padding:9px 15px; font-weight:bold; font-size:13px;}
 
-/* Thẻ dịch vụ */
-.service-card {
-    background: #ffffff;
-    border: 1px solid #dddddd;
-}
+/* BANNER + NẠP THẺ */
+.banner-recharge-row {max-width:1200px; margin:15px auto; padding:0 15px; display:flex; gap:15px; flex-wrap:wrap;}
+.banner-col {flex:3 1 500px;}
+.main-banner {width:100%; object-fit:contain; border-radius:6px; display:block;}
+.recharge-col {flex:1 1 280px; background:#fff; border:1px solid #ff3333; border-radius:6px; padding:12px;}
+.recharge-col h4 {font-size:15px; margin-bottom:8px; color:#222;}
+.recharge-tabs {display:flex; gap:5px; margin-bottom:10px;}
+.tab-btn {flex:1; padding:6px; border:none; border-radius:4px; font-size:12px; font-weight:bold; cursor:pointer;}
+.tab-btn.active {background:#ff3333; color:#fff;}
+.tab-btn:not(.active) {background:#f0f0f0; color:#555;}
+.recharge-input {width:100%; padding:8px; margin:5px 0; border:1px solid #ddd; border-radius:4px; font-size:13px;}
+.recharge-btn {width:100%; padding:10px; border:none; border-radius:4px; background:#ff3333; color:#fff; font-weight:bold; margin-top:5px; cursor:pointer;}
 
-/* Ô ưu điểm */
-.benefit-item {
-    background: #ffffff;
-    border: 1px solid #eeeeee;
-}
+/* THÔNG BÁO */
+.trade-notice {max-width:1200px; margin:15px auto; padding:0 15px; display:flex; align-items:center; gap:6px; font-size:13px;}
+.notice-icon {width:16px; height:16px; object-fit:contain;}
+.username {background:#ffcc00; padding:2px 6px; border-radius:4px; font-weight:bold; margin-right:4px;}
 
-/* Ô nhập liệu */
-.input-field {
-    background: #ffffff;
-    border: 1px solid #cccccc;
-    color: #000000;
-}
+/* DỊCH VỤ */
+.section-service {max-width:1200px; margin:25px auto; padding:0 15px;}
+.section-header {display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:15px; flex-wrap:wrap; gap:10px;}
+.section-header h3 {font-size:19px; font-weight:bold;}
+.section-header p {font-size:13px; color:#666; margin-top:4px;}
+.btn-red-small {background:#ff0000; color:#fff; border:none; padding:6px 12px; border-radius:4px; font-size:13px; font-weight:bold; cursor:pointer;}
+.service-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax:240px,1fr)); gap:15px;}
+.service-item {background:#fff; border:1px solid #eee; border-radius:6px; overflow:hidden; text-align:center; padding-bottom:12px;}
+.service-img {width:100%; height:180px; object-fit:cover; display:block;}
+.service-item p {font-size:14px; font-weight:bold; padding:10px 8px 5px; color:#333;}
+.btn-gold {background:linear-gradient(90deg, #ffdd77, #ff99cc); color:#ff0055; border:none; font-weight:bold; padding:10px 25px; border-radius:999px; font-size:15px; cursor:pointer; margin-top:5px;}
 
-/* Chân trang giữ nguyên đen tương phản */
-.footer-dark {
-    background: #222222;
-    color: #dddddd;
+/* ƯU ĐIỂM - ẢNH ICON */
+.feature-row {max-width:1200px; margin:30px auto; padding:0 15px; display:grid; grid-template-columns:repeat(auto-fit, minmax:200px,1fr)); gap:15px;}
+.feature-box {background:#fff; border:1px solid #eee; border-radius:6px; padding:15px; text-align:center;}
+.feature-icon-img {width:36px; height:36px; object-fit:contain; margin:0 auto 8px; display:block;}
+.feature-box p {font-size:13px; color:#333;}
+
+/* CHÂN TRANG */
+.page-footer {background:#111; color:#aaa; padding:25px 15px; display:grid; grid-template-columns:repeat(auto-fit, minmax:200px,1fr)); gap:20px; margin-top:20px;}
+.page-footer h4 {color:#fff; margin-bottom:10px; font-size:15px;}
+.page-footer a {color:#aaa; text-decoration:none; display:block; margin:4px 0; font-size:13px;}
+.page-footer a:hover {color:#ffcc00;}
+.f-logo {max-width:180px; object-fit:contain;}
+
+/* ĐIỆN THOẠI */
+@media (max-width:768px){
+    .banner-recharge-row {flex-direction:column;}
+    .recharge-col {order:2;}
+    .banner-col {order:1;}
+    .service-grid {grid-template-columns:repeat(2,1fr);}
+    .feature-row {grid-template-columns:repeat(2,1fr);}
 }
