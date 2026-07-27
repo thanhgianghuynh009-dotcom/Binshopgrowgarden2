@@ -1,3 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP DỊCH VỤ GAG2</title>
+    <!-- LIÊN KẾT CSS ĐÚNG ĐỊNH DẠNG -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- THANH TRÊN CÙNG -->
+<div class="top-header">
+    <div class="header-left">
+        <img src="logo-small.png" alt="Logo" class="header-logo">
+        <a href="index.html" class="header-link active">TRANG CHỦ</a>
+        <a href="#" class="header-link">DANH MỤC</a>
+        <a href="#" class="header-link">TIN TỨC</a>
+    </div>
+    <div class="header-right">
+        <a href="#" class="header-icon"><img src="icon-notify.png" alt="Thông báo"></a>
+        <a href="user.html" class="header-icon"><img src="icon-user.png" alt="Tài khoản"></a>
+        <a href="register.html" class="header-icon"><img src="icon-register.png" alt="Đăng ký"></a>
+    </div>
+</div>
+
+<!-- THANH CHÀO MỪNG VÀNG -->
+<div class="welcome-bar">
+    CHÀO MỪNG BẠN ĐẾN VỚI - SHOP BÁN ITEM ROBLOX UY TÍN, NHẬN 100% GIÁ TRỊ KHI NẠP THẺ CAO
+</div>
+
+<!-- BANNER + KHỐI NẠP THẺ 3 TAB -->
+<div class="banner-recharge-wrap">
+    <div class="banner-col">
+        <img src="banner-main.jpg" alt="SHOP DỊCH VỤ ROBLOX GIÁ RẺ" class="banner-img">
+    </div>
+    <div class="recharge-col">
         <h4>TOP NẠP T.07</h4>
         <div class="recharge-tabs">
             <button class="tab-btn active" onclick="switchTab('nap')">Nạp thẻ</button>
@@ -5,7 +42,7 @@
             <button class="tab-btn" onclick="switchTab('thuong')">Phần thưởng</button>
         </div>
 
-        <!-- Tab Nạp thẻ -->
+        <!-- TAB NẠP THẺ -->
         <div id="tab-nap" class="tab-content">
             <input type="text" placeholder="Viettel" class="recharge-input">
             <input type="text" placeholder="-- Chọn đúng mệnh giá --" class="recharge-input">
@@ -14,24 +51,123 @@
             <button class="recharge-btn">NẠP THẺ NGAY</button>
         </div>
 
-        <!-- Tab Tháng này - CHỈ HIỆN KHI CÓ DỮ LIỆU THẬT -->
+        <!-- TAB THÁNG NÀY - KHÔNG GHI CỨNG DỮ LIỆU -->
         <div id="tab-thang" class="tab-content" style="display:none;">
             <div class="top-list">
                 <div class="empty-text">Chưa có dữ liệu nạp thẻ tháng này</div>
-                <!-- === KHI CÓ DỮ LIỆU THẬT THÌ DÙNG CẤU TRÚC NÀY ===
-                <div class="top-item"><span>1</span> [Tên tài khoản] - [Tổng tiền nạp]</div>
-                <div class="top-item"><span>2</span> [Tên tài khoản] - [Tổng tiền nạp]</div>
-                <div class="top-item"><span>3</span> [Tên tài khoản] - [Tổng tiền nạp]</div>
-                ...
-                => Hệ thống sẽ tự SẮP XẾP TỪ NGƯỜI NẠP NHIỀU NHẤT XUỐNG DƯỚI
-                ========================================================== -->
+                <!-- Khi có hệ thống thật, thêm vào đây:
+                <div class="top-item"><span>1</span> Tên người - Số tiền</div>
+                <div class="top-item"><span>2</span> Tên người - Số tiền</div>
+                Sẽ tự xếp người nạp nhiều nhất lên đầu -->
             </div>
         </div>
 
-        <!-- Tab Phần thưởng - CHỈ CẬP NHẬT KHI CÓ KẾT QUẢ -->
+        <!-- TAB PHẦN THƯỞNG -->
         <div id="tab-thuong" class="tab-content" style="display:none;">
             <p class="reward-title">ĐỰA TOP NẠP THẺ HÀNG TUẦN - THƯỞNG HÀNG TUẦN</p>
             <div class="top-list">
                 <div class="empty-text">Sẽ công bố sau khi chốt số liệu</div>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- THÔNG BÁO GIAO DỊCH -->
+<div class="trade-notice">
+    <img src="icon-bell-small.png" alt="Thông báo" class="notice-icon">
+    <span class="tag-name">Zinhzu</span>
+    <span> đã mua thành công accounts mang mã số #459 chỉ với giá 20.000đ</span>
+</div>
+
+<!-- DỊCH VỤ GAG 2 -->
+<div class="section-service">
+    <div class="section-head">
+        <div>
+            <h3>DỊCH VỤ GAG 2</h3>
+            <p>Giá Rẻ Chỉ Cần Chọn Đúng Tên Game @ Vệ Nhanh</p>
+        </div>
+        <button class="btn-red">Khám Phá</button>
+    </div>
+    <div class="service-grid">
+        <div class="service-card">
+            <img src="img-hat.jpg" alt="Hạt giống VIP" class="card-img">
+            <p>HẠT GIỐNG VIP GIÁ RẺ</p>
+            <button class="btn-gold">XEM TẤT CẢ</button>
+        </div>
+        <div class="service-card">
+            <img src="img-pet.jpg" alt="Pet VIP GAG 2" class="card-img">
+            <p>PET VIP GAG 2</p>
+            <button class="btn-gold">XEM TẤT CẢ</button>
+        </div>
+        <div class="service-card">
+            <img src="img-gear.jpg" alt="Shop Gear" class="card-img">
+            <p>SHOP GEAR</p>
+            <button class="btn-gold">XEM TẤT CẢ</button>
+        </div>
+        <div class="service-card">
+            <img src="img-sheckles.jpg" alt="Sheckles GAG 2" class="card-img">
+            <p>SHECKLES GAG 2</p>
+            <button class="btn-gold">XEM TẤT CẢ</button>
+        </div>
+    </div>
+</div>
+
+<!-- ƯU ĐIỂM -->
+<div class="feature-row">
+    <div class="feature-item">
+        <img src="icon-feat1.png" alt="Dịch vụ đa dạng" class="feat-icon">
+        <p>Sản Phẩm, Dịch Vụ Đa Dạng, Cập Nhật Liên Tục.</p>
+    </div>
+    <div class="feature-item">
+        <img src="icon-feat2.png" alt="Uy tín" class="feat-icon">
+        <p>Hàng Ngàn Khách Hàng Tin Tưởng, Ứng Hộ.</p>
+    </div>
+    <div class="feature-item">
+        <img src="icon-feat3.png" alt="Hỗ trợ" class="feat-icon">
+        <p>Trung Tâm Hỗ Trợ Nhanh Chóng, Tận Tình 24/7.</p>
+    </div>
+    <div class="feature-item">
+        <img src="icon-feat4.png" alt="Chất lượng" class="feat-icon">
+        <p>Giá Rẻ, Uy Tín, Chất Lượng Nhất Thị Trường.</p>
+    </div>
+</div>
+
+<!-- CHÂN TRANG -->
+<footer class="page-footer">
+    <div class="footer-col">
+        <img src="footer-logo.png" alt="Logo chân trang" class="footer-logo">
+    </div>
+    <div class="footer-col">
+        <h4>THÔNG TIN CHUNG</h4>
+        <p>HỆ THỐNG BÁN ACC TỰ ĐỘNG</p>
+        <p>BẢO MẬT & TIN CẬY</p>
+    </div>
+    <div class="footer-col">
+        <h4>DỊCH VỤ</h4>
+        <p>▶ Tất Cả Item Broken</p>
+        <p>▶ Tất Cả Nick Roblox</p>
+    </div>
+    <div class="footer-col">
+        <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+        <p>📞 Zalo: 0325388972</p>
+        <p>📘 Facebook: Binshopgrow2</p>
+        <p>⏰ Phục vụ 24/7</p>
+    </div>
+</footer>
+
+<!-- JS CHUYỂN TAB -->
+<script>
+function switchTab(tabName) {
+    // Ẩn tất cả nội dung tab
+    document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+    // Bỏ active tất cả nút
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    // Hiện tab được chọn
+    document.getElementById('tab-' + tabName).style.display = 'block';
+    // Đánh dấu nút đang chọn
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
