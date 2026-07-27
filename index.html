@@ -7,116 +7,123 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- THANH TRÊN CÙNG - ĐÃ ẨN TÊN/ID -->
+<!-- THANH TRÊN CÙNG -->
 <div class="header-top">
     <div class="header-left">
-        <a href="index.html" class="logo-text">BINSHOPGROW2</a>
+        <img src="logo-mini.png" alt="Logo" class="logo-mini">
         <a href="index.html" class="menu-link active">TRANG CHỦ</a>
         <a href="#" class="menu-link">DANH MỤC</a>
         <a href="#" class="menu-link">TIN TỨC</a>
     </div>
     <div class="header-right">
-        <a href="#" class="icon-link" title="Nạp tiền">💲</a>
+        <a href="#" class="icon-pink" title="Nạp tiền">💲</a>
         <a href="#" class="icon-link" title="Thông báo">🔔</a>
-        <div class="user-menu">
-            <span class="user-icon-only">👤</span>
-            <div class="user-dropdown">
-                <a href="dangnhap.html">Đăng nhập</a>
-                <a href="dangky.html">Tạo tài khoản mới</a>
-                <hr>
-                <a href="taikhoan.html">Quản lý tài khoản</a>
-                <a href="taikhoan.html">Lịch sử nạp thẻ</a>
-                <a href="taikhoan.html">Lịch sử dịch vụ</a>
-            </div>
-        </div>
+        <a href="dangnhap.html" class="icon-link" title="Đăng nhập">👤</a>
+        <a href="dangky.html" class="icon-link" title="Tạo tài khoản">➕</a>
     </div>
 </div>
 
-<!-- THANH CHÀO MỪNG -->
-<div class="banner-notice">
-    CHÀO MỪNG BẠN ĐẾN VỚI BINSHOPGROW2 - SHOP BÁN ITEM ROBLOX UY TÍN, NHẬN 100% GIÁ TRỊ KHI NẠP THẺ CÀO
+<!-- THANH CHÀO MỪNG VÀNG -->
+<div class="welcome-bar">
+    CHÀO MỪNG BẠN ĐẾN VỚI - SHOP BÁN ITEM ROBLOX UY TÍN, NHẬN 100% GIÁ TRỊ KHI NẠP THẺ CÀO
 </div>
 
-<!-- BANNER LỚN -->
-<div class="main-banner">
-    <img src="banner-grow2.jpg" alt="SHOP GAG2 GIÁ RẺ" class="banner-img">
+<!-- KHU VỰC BANNER + NẠP TIỀN -->
+<div class="banner-row">
+    <div class="banner-left">
+        <img src="banner-main.jpg" alt="SHOP DỊCH VỤ ROBLOX GIÁ RẺ" class="banner-full">
+    </div>
+    <div class="recharge-box">
+        <h4>TOP NẠP T.07</h4>
+        <div class="tab-row">
+            <button class="tab-btn active">Nạp thẻ</button>
+            <button class="tab-btn">Tháng này</button>
+            <button class="tab-btn">Phần thưởng</button>
+        </div>
+        <input type="text" placeholder="Viettel" class="input-field">
+        <input type="text" placeholder="-- Chọn đúng mệnh giá. 5" class="input-field">
+        <input type="text" placeholder="Nhập mã thẻ" class="input-field">
+        <input type="text" placeholder="Nhập số serial" class="input-field">
+        <button class="btn-recharge">NẠP THẺ NGAY</button>
+    </div>
 </div>
 
 <!-- DÒNG THÔNG BÁO -->
-<div class="alert-line">
-    <span class="alert-tag">🔔 Thông báo</span>
-    <span>Cập nhật dịch vụ mới: Hạt giống VIP, Pet Thần Thoại đã có hàng. Liên hệ Zalo: 0325388972</span>
+<div class="notify-line">
+    <span class="bell-icon">🔔</span>
+    <span class="tag-zinhzu">Zinhzu</span>
+    <span> đã mua thành công accounts mang mã số #...</span>
 </div>
 
 <!-- DỊCH VỤ GAG2 -->
-<div class="section-wrap">
-    <div class="section-head">
+<div class="section-service">
+    <div class="section-title">
         <div>
-            <h2>DỊCH VỤ GAG 2</h2>
+            <h3>DỊCH VỤ GAG 2</h3>
             <p>Giá Rẻ Chỉ Cần Chọn Đúng Tên Game @ Vệ Nhanh</p>
         </div>
-        <button class="btn-explore">Khám Phá</button>
+        <button class="btn-red">Khám Phá</button>
     </div>
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="hat-giong.jpg" alt="Hạt giống VIP">
-            <h3>HẠT GIỐNG VIP GIÁ RẺ</h3>
-            <button class="btn-view-all">XEM TẤT CẢ</button>
+    <div class="card-grid">
+        <div class="service-card">
+            <img src="img-hat.jpg" alt="Hạt giống VIP">
+            <p>HẠT GIỐNG VIP GIÁ RẺ</p>
+            <button class="btn-view">XEM TẤT CẢ</button>
         </div>
-        <div class="product-card">
-            <img src="pet.jpg" alt="Pet VIP">
-            <h3>PET VIP GAG 2</h3>
-            <button class="btn-view-all">XEM TẤT CẢ</button>
+        <div class="service-card">
+            <img src="img-pet.jpg" alt="Pet VIP">
+            <p>PET VIP GAG 2</p>
+            <button class="btn-view">XEM TẤT CẢ</button>
         </div>
-        <div class="product-card">
-            <img src="gear.jpg" alt="Shop Gear">
-            <h3>SHOP GEAR</h3>
-            <button class="btn-view-all">XEM TẤT CẢ</button>
+        <div class="service-card">
+            <img src="img-gear.jpg" alt="Shop Gear">
+            <p>SHOP GEAR</p>
+            <button class="btn-view">XEM TẤT CẢ</button>
         </div>
-        <div class="product-card">
-            <img src="sheckles.jpg" alt="Sheckles">
-            <h3>SHECKLES GAG 2</h3>
-            <button class="btn-view-all">XEM TẤT CẢ</button>
+        <div class="service-card">
+            <img src="img-sheckles.jpg" alt="Sheckles">
+            <p>SHECKLES GAG 2</p>
+            <button class="btn-view">XEM TẤT CẢ</button>
         </div>
     </div>
 </div>
 
 <!-- 4 Ô ƯU ĐIỂM -->
-<div class="feature-grid">
-    <div class="feature-item">
-        <span class="feature-icon">🛍️</span>
+<div class="four-box">
+    <div class="box-item">
+        <span class="box-icon">🛍️</span>
         <p>Sản Phẩm, Dịch Vụ Đa Dạng, Cập Nhật Liên Tục.</p>
     </div>
-    <div class="feature-item">
-        <span class="feature-icon">🛡️</span>
+    <div class="box-item">
+        <span class="box-icon">🛡️</span>
         <p>Hàng Ngàn Khách Hàng Tin Tưởng, Ứng Hộ.</p>
     </div>
-    <div class="feature-item">
-        <span class="feature-icon">📞</span>
+    <div class="box-item">
+        <span class="box-icon">📞</span>
         <p>Trung Tâm Hỗ Trợ Nhanh Chóng, Tận Tình 24/7.</p>
     </div>
-    <div class="feature-item">
-        <span class="feature-icon">👍</span>
+    <div class="box-item">
+        <span class="box-icon">👍</span>
         <p>Giá Rẻ, Uy Tín, Chất Lượng Nhất Thị Trường.</p>
     </div>
 </div>
 
 <!-- CHÂN TRANG -->
-<footer class="page-footer">
+<footer class="footer-dark">
     <div class="footer-col">
         <h4>THÔNG TIN CHUNG</h4>
-        <p>BINSHOPGROW2 - DỊCH VỤ UY TÍN</p>
-        <p>HOẠT ĐỘNG TỪ NĂM 2024</p>
+        <p>HỆ THỐNG BÁN ACC TỰ ĐỘNG</p>
+        <p>BẢO MẬT & TIN CẬY</p>
     </div>
     <div class="footer-col">
-        <h4>DỊCH VỤ CHÍNH</h4>
-        <a href="#">▶ Hạt giống - Pet - Sheckles</a>
-        <a href="#">▶ Gear - Cày thuê - Nạp thẻ</a>
+        <h4>DỊCH VỤ</h4>
+        <a href="#">▶ Tất Cả Item Broken</a>
+        <a href="#">▶ Tất Cả Nick Roblox</a>
     </div>
     <div class="footer-col">
-        <h4>LIÊN HỆ</h4>
+        <h4>HỖ TRỢ KHÁCH HÀNG</h4>
         <p>📞 Zalo: 0325388972</p>
-        <p>⏰ Phục vụ tất cả các ngày</p>
+        <p>⏰ Phục vụ 24/7</p>
     </div>
 </footer>
 </body>
